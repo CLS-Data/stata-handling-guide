@@ -2,10 +2,10 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: docs/intro
+root: docs/intro.md
 chapters:
-- file: docs/documentation_download
-- file: docs/ncds
-- file: docs/bcs70
-- file: docs/next_steps
-- file: docs/mcs
+- file: docs/documentation_download.md
+- file: docs/ncds.md
+- file: docs/bcs70.md
+- file: docs/next_steps.md
+- file: docs/mcs.md
