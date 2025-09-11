@@ -34,3 +34,5 @@ sphinx:
   config:
     html_theme_options:
       navigation_depth: 2
+      
+only_build_toc_files: true
