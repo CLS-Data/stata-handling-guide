@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; CLS Data Handling Guide</title>
+    <title>Creating a Simple Folder Structure &#8212; CLS Data Handling Guide</title>
   
   
   
@@ -60,6 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/bcs70-sweep_folders';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Next Steps" href="next_steps.html" />
+    <link rel="prev" title="BCS70" href="bcs70.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +124,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,11 +179,21 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="ncds.html">NCDS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bcs70.html">BCS70</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="documentation_download.html">Downloading Documentation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ncds.html">NCDS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ncds-sweep_folders.html">Creating a Simple Folder Structure</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="bcs70.html">BCS70</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Creating a Simple Folder Structure</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="next_steps.html">Next Steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mcs.html">MCS</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="mcs.html">MCS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="mcs-sweep_folders.html">Creating a Simple Folder Structure</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -356,9 +366,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -369,19 +377,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Creating a Simple Folder Structure</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -391,12 +391,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>This page introduces code for taking <a class="reference external" href="https://doi.org/10.5255/UKDA-Series-200001">BCS70 UKDS End User Licence</a> zipped Stata (<code class="docutils literal notranslate"><span class="pre">.dta</span></code>) files, unzipping them and placing into per-sweep folders. The code is available on GitHub: <a class="github reference external" href="https://github.com/CLS-Data/make-directories-bcs70">CLS-Data/make-directories-bcs70</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="creating-a-simple-folder-structure">
+<h1>Creating a Simple Folder Structure<a class="headerlink" href="#creating-a-simple-folder-structure" title="Link to this heading">#</a></h1>
+<p>This page introduces code for taking <a class="reference external" href="https://doi.org/10.5255/UKDA-Series-200001">BCS70 UKDS End User Licence</a> zipped Stata (<code class="docutils literal notranslate"><span class="pre">.dta</span></code>) files, unzipping them and placing into per-sweep folders. The code is available on GitHub: <a class="github reference external" href="https://github.com/CLS-Data/make-directories-bcs70">CLS-Data/make-directories-bcs70</a>.</p>
 <p>To use the code, first download or clone the GitHub directory. To download the directory, on the GitHub website, click <code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">-&gt;</span> <span class="pre">Download</span> <span class="pre">ZIP</span></code> (see screenshot below) then unzip the downloaded file and place in a suitable location on your computer. To clone the directory, open your computer’s command line or terminal, navigate to an appropriate location (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">...</span></code>) and type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/CLS-Data/make-directories-bcs70</span></code>. You may want to rename the folder from <code class="docutils literal notranslate"><span class="pre">make-directories-bcs70</span></code> to <code class="docutils literal notranslate"><span class="pre">BCS70</span></code> or something similar.</p>
 <p><img alt="Downloading the GitHub directory" src="../_images/bcs70-sweep_folders_1.png" /></p>
 <p>When the folder is downloaded, open the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file and follow the instructions. You will need to download <code class="docutils literal notranslate"><span class="pre">R</span></code> and <code class="docutils literal notranslate"><span class="pre">RStudio</span></code>, as well as the appropriate BCS70 Stata files off the UK Data Service. The <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file lists the asset numbers of the files the code will work for.</p>
 <p>Once completed, the folder should look like the below. You will see the code also creates a data dictionary (in <code class="docutils literal notranslate"><span class="pre">.csv</span></code> and <code class="docutils literal notranslate"><span class="pre">R</span></code> [<code class="docutils literal notranslate"><span class="pre">.Rdata</span></code>] formats) which you can use to search for variables.</p>
 <p><img alt="Directory after code completed" src="../_images/bcs70-sweep_folders_2.png" /></p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -428,27 +431,30 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="bcs70.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">BCS70</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="next_steps.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Next Steps</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

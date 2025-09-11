@@ -6,6 +6,12 @@ root: docs/intro.md
 chapters:
 - file: docs/documentation_download.md
 - file: docs/ncds.md
+  sections:
+  - file: docs/ncds-sweep_folders.md
 - file: docs/bcs70.md
+  sections:
+  - file: docs/bcs70-sweep_folders.md
 - file: docs/next_steps.md
 - file: docs/mcs.md
+  sections:
+  - file: docs/mcs-sweep_folders.md

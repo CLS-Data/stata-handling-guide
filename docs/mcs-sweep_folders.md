@@ -1,9 +1,4 @@
----
-layout: default
-title: "Creating a Simple Folder Structure"
-nav_order: 1
-parent: MCS
----
+#  Creating a Simple Folder Structure
 
 This page introduces code for taking [MCS UKDS End User Licence](https://doi.org/10.5255/UKDA-Series-2000031) zipped Stata (`.dta`) files, unzipping them and placing into per-sweep folders. The code is available on GitHub: [https://github.com/CLS-Data/make-directories-mcs](https://github.com/CLS-Data/make-directories-mcs).
 

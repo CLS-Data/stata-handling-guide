@@ -1,9 +1,4 @@
----
-layout: default
-title: "Creating a Simple Folder Structure"
-nav_order: 1
-parent: BCS70
----
+# Creating a Simple Folder Structure
 
 This page introduces code for taking [BCS70 UKDS End User Licence](https://doi.org/10.5255/UKDA-Series-200001) zipped Stata (`.dta`) files, unzipping them and placing into per-sweep folders. The code is available on GitHub: [https://github.com/CLS-Data/make-directories-bcs70](https://github.com/CLS-Data/make-directories-bcs70).
 
