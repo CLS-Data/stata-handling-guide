@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/intro
+chapters:
+- file: docs/documentation_download
+- file: docs/ncds
+- file: docs/bcs70
+- file: docs/next_steps
+- file: docs/mcs
