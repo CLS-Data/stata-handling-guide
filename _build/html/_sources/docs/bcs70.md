@@ -1,3 +1,5 @@
+# BCS70
+
 This section presents code to clean and handle data from the 1970 British Cohort Study (BCS70). The BCS70 has relatively straightforward data structures. Difficulties mainly arise from its historic nature - data from older sweeps does not conform to modern metadata standards (e.g., file and variable names are not explanatory). This can make it challenging to find relevant variables. In "Data Discovery", we provide code to assist with data discovery (i.e., creating searchable data dictionaries).
 
 ## Miscellanea

@@ -1,8 +1,4 @@
----
-layout: default
-title: "Downloading Documentation"
-nav_order: 2
----
+# Downloading Documentation
 
 The UKDS files come bundled with study documentation in `.pdf` format within the `mrdoc/` subfolder - for instance, technical reports, questionnaires, user guides, etc. The files do not always have the most user-friendly titles, so we have written code to instead download documentation from the CLS study pages.
 

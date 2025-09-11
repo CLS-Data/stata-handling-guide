@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Miscellanea &#8212; My sample book</title>
+    <title>NCDS &#8212; CLS Data Handling Guide</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ncds';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Miscellanea" href="bcs70.html" />
+    <link rel="next" title="BCS70" href="bcs70.html" />
     <link rel="prev" title="&lt;no title&gt;" href="documentation_download.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -153,8 +153,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="../_static/cls_logo.svg" class="logo__image only-light" alt="CLS Data Handling Guide - Home"/>
+    <script>document.write(`<img src="../_static/cls_logo.svg" class="logo__image only-dark" alt="CLS Data Handling Guide - Home"/>`);</script>
   
   
 </a></div>
@@ -180,8 +180,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Miscellanea</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bcs70.html">Miscellanea</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">NCDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bcs70.html">BCS70</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next_steps.html">Next Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mcs.html">MCS</a></li>
 </ul>
 
     </div>
@@ -236,7 +238,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/CLS-Data/stata-handling-guide" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -253,7 +255,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdocs/ncds.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/CLS-Data/stata-handling-guide/issues/new?title=Issue%20on%20page%20%2Fdocs/ncds.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -354,7 +356,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -365,11 +369,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Miscellanea</h1>
+    <h1>NCDS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">Miscellanea</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -379,9 +391,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>This section presents code to clean and handle data from the National Child Development Study (NCDS). The NCDS has relatively straightforward data structures. Difficulties mainly arise from its historic nature - data from older sweeps does not conform to modern metadata standards (e.g., file and variable names are not explanatory). This can make it challenging to find relevant variables. In “Data Discovery”, we provide code to assist with data discovery (i.e., creating searchable data dictionaries).</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ncds">
+<h1>NCDS<a class="headerlink" href="#ncds" title="Link to this heading">#</a></h1>
+<p>This section presents code to clean and handle data from the National Child Development Study (NCDS). The NCDS has relatively straightforward data structures. Difficulties mainly arise from its historic nature - data from older sweeps does not conform to modern metadata standards (e.g., file and variable names are not explanatory). This can make it challenging to find relevant variables. In “Data Discovery”, we provide code to assist with data discovery (i.e., creating searchable data dictionaries).</p>
 <section id="miscellanea">
-<h1>Miscellanea<a class="headerlink" href="#miscellanea" title="Link to this heading">#</a></h1>
+<h2>Miscellanea<a class="headerlink" href="#miscellanea" title="Link to this heading">#</a></h2>
 <p>There are a few characteristics of the NCDS that data users should be aware of.</p>
 <ul class="simple">
 <li><p>The cohort member identifier variable is <code class="docutils literal notranslate"><span class="pre">NCDSID</span></code>. In earlier datasets, this variable is stored in lower case, <code class="docutils literal notranslate"><span class="pre">ncdsid</span></code>.</p></li>
@@ -393,6 +407,7 @@ document.write(`
 <li><p>The NCDS recruited immigrants to the UK during childhood sweeps using school enrollment information. These immigrants met the same eligibility criteria as original cohort members (born in a single week of March 1958). Immigrant additions can be ascertained using the variables <code class="docutils literal notranslate"><span class="pre">OUTCME00</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTCME01</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTCME02</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTCME03</span></code> in <code class="docutils literal notranslate"><span class="pre">ncds_response.dta</span></code>.</p></li>
 <li><p>Negative values are typically reserved for different forms of missingness (“Don’t know”, “Refuse”, “Not applicable”, etc.), but in some cases - especially with older datasets - missing values have positive values instead.</p></li>
 </ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -439,7 +454,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Miscellanea</p>
+        <p class="prev-next-title">BCS70</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -450,6 +465,21 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">Miscellanea</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -459,7 +489,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By CLS Data
 </p>
 
   </div>
